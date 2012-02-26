@@ -1,6 +1,6 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- Python Documentation contents
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ IronPython Documentation contents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 .. toctree::
 
@@ -10,7 +10,7 @@
    reference/index.rst
    library/index.rst
    extending/index.rst
-   c-api/index.rst
+   net-api/index.rst
    distutils/index.rst
    install/index.rst
    documenting/index.rst

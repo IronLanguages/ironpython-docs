@@ -185,8 +185,8 @@ Glossary
       not expressions.
 
    extension module
-      A module written in C or C++, using Python's C API to interact with the
-      core and with user code.
+      A module written in C# (or any other .NET language), using IronPython's 
+      .NET API to interact with the core and with user code.
 
    finder
       An object that tries to find the :term:`loader` for a module. It must

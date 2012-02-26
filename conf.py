@@ -18,8 +18,8 @@ extensions = ['sphinx.ext.refcounting', 'sphinx.ext.coverage',
 templates_path = ['tools/sphinxext']
 
 # General substitutions.
-project = 'Python'
-copyright = '1990-%s, Python Software Foundation' % time.strftime('%Y')
+project = 'IronPython'
+copyright = 'IronPython Team; Microsoft Corporation; Python Software Foundation'
 
 # The default replacements for |version| and |release|.
 #
@@ -27,11 +27,7 @@ copyright = '1990-%s, Python Software Foundation' % time.strftime('%Y')
 # version = '2.6'
 # The full version, including alpha/beta/rc tags.
 # release = '2.6a0'
-
-# We look for the Include/patchlevel.h file in the current Python source tree
-# and replace the values accordingly.
-import patchlevel
-version, release = patchlevel.get_version_info()
+version, release = '2.7','2.7.2b1'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -89,7 +85,7 @@ html_use_opensearch = 'http://docs.python.org/dev'
 html_static_path = ['tools/sphinxext/static']
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'python' + release.replace('.', '')
+htmlhelp_basename = 'ironpython' + release.replace('.', '')
 
 # Split the index
 html_split_index = True
@@ -108,8 +104,6 @@ latex_font_size = '10pt'
 # (source start file, target name, title, author, document class [howto/manual]).
 _stdauthor = r'Guido van Rossum\\Fred L. Drake, Jr., editor'
 latex_documents = [
-    ('c-api/index', 'c-api.tex',
-     'The Python/C API', _stdauthor, 'manual'),
     ('distutils/index', 'distutils.tex',
      'Distributing Python Modules', _stdauthor, 'manual'),
     ('documenting/index', 'documenting.tex',
@@ -120,6 +114,8 @@ latex_documents = [
      'Installing Python Modules', _stdauthor, 'manual'),
     ('library/index', 'library.tex',
      'The Python Library Reference', _stdauthor, 'manual'),
+    ('net-api/index', 'net-api.tex',
+     'The Python/.NET API', 'IronPython Contributors', 'manual'),
     ('reference/index', 'reference.tex',
      'The Python Language Reference', _stdauthor, 'manual'),
     ('tutorial/index', 'tutorial.tex',
